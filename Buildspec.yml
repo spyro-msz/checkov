@@ -1,12 +1,11 @@
 version: 0.2
 
-env:
+phases:
   install:
     commands:
       - apt upgrade -y
       - apt install python3-pip
       - pip3 install checkov
-
   build:
     commands:
       - checkov -d terraform-example/
