@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt upgrade -y
-      - apt install python3-pip
+      - apt-get upgrade -y
+      - apt-get install python3-pip -y
       - pip3 install checkov
   build:
     commands:
